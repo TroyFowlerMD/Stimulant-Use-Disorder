@@ -70,6 +70,106 @@
 .mme-modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:300;align-items:center;justify-content:center;padding:1rem}.mme-modal-overlay.active{display:flex}.mme-modal{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.75rem;max-width:700px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 12px 48px rgba(0,0,0,0.5)}.mme-modal h2{font-size:1.1rem;margin-bottom:0.25rem}.mme-modal .mme-subtitle{font-size:0.78rem;color:var(--text-muted);margin-bottom:1rem;line-height:1.5}.mme-input-row{display:flex;gap:0.75rem;align-items:flex-end;margin-bottom:1.25rem;flex-wrap:wrap}.mme-field{display:flex;flex-direction:column;gap:0.3rem}.mme-field label{font-size:0.78rem;font-weight:500;color:var(--text-muted)}.mme-field select,.mme-field input{padding:0.45rem 0.65rem;background:var(--surface-2);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:0.82rem;font-family:var(--font-body);outline:none;transition:border-color var(--transition)}.mme-field select:focus,.mme-field input:focus{border-color:var(--cat2)}.mme-field input{width:100px;font-family:var(--font-mono)}.mme-convert-btn{padding:0.45rem 1rem;background:var(--cat2);color:#0f1117;border:none;border-radius:6px;font-size:0.82rem;font-weight:600;cursor:pointer;transition:opacity var(--transition);font-family:var(--font-body)}.mme-convert-btn:hover{opacity:0.85}.mme-results{margin-top:0.5rem}.mme-results table{width:100%;border-collapse:collapse;font-size:0.78rem}.mme-results th{text-align:left;padding:0.5rem 0.65rem;font-weight:600;background:var(--surface-2);border-bottom:1px solid var(--border);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-muted)}.mme-results td{padding:0.5rem 0.65rem;border-bottom:1px solid var(--border)}.mme-results tr.active-row{background:var(--cat2-bg2)}.mme-results .dose-val{font-family:var(--font-mono);font-weight:600}.mme-ref{font-size:0.7rem;color:var(--text-faint);margin-top:1rem;line-height:1.5}.mme-footer{display:flex;gap:0.5rem;justify-content:flex-end;margin-top:1rem}.mme-warning{margin-top:1rem;padding:0.75rem 1rem;border-radius:8px;font-size:0.82rem;line-height:1.5}.mme-warning.caution{background:rgba(255,217,61,0.12);border:1px solid var(--cat3);color:var(--cat3)}.mme-warning.high-risk{background:rgba(255,107,107,0.12);border:1px solid var(--cat1);color:var(--cat1)}
 .bup-modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:300;align-items:center;justify-content:center;padding:1rem}.bup-modal-overlay.active{display:flex}.bup-modal{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.75rem;max-width:720px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 12px 48px rgba(0,0,0,0.5)}.bup-modal h2{font-size:1.1rem;margin-bottom:0.25rem}.bup-modal .bup-subtitle{font-size:0.78rem;color:var(--text-muted);margin-bottom:1rem;line-height:1.5}.bup-protocol-tabs{display:flex;gap:0;margin-bottom:1rem;border-bottom:1px solid var(--border)}.bup-protocol-tab{padding:0.625rem 1rem;font-size:0.82rem;font-weight:500;color:var(--text-muted);cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;transition:all var(--transition)}.bup-protocol-tab:hover{color:var(--text)}.bup-protocol-tab.active{color:var(--text);border-bottom-color:var(--cat5)}.bup-protocol-panel{display:none}.bup-protocol-panel.active{display:block}.bup-schedule-table{width:100%;border-collapse:collapse;font-size:0.78rem;margin-bottom:1rem}.bup-schedule-table th{padding:0.5rem;text-align:left;font-weight:600;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--text-muted);border-bottom:2px solid var(--border);background:var(--surface-2)}.bup-schedule-table td{padding:0.5rem;border-bottom:1px solid var(--border);vertical-align:top}.bup-schedule-table td.dose-cell{font-family:var(--font-mono);font-weight:600;color:var(--cat5)}.bup-pearl{padding:0.75rem 1rem;background:var(--surface-2);border-left:3px solid var(--cat5);border-radius:0 8px 8px 0;font-size:0.82rem;line-height:1.5;margin-bottom:0.75rem}.bup-ref{font-size:0.7rem;color:var(--text-faint);margin-top:1rem;line-height:1.5}.bup-footer{display:flex;gap:0.5rem;justify-content:flex-end;margin-top:1rem}
 @media print{body{background:#fff !important;color:#000 !important;font-size:11pt}.topnav,.search-bar,.explore-controls,.breadcrumb-bar,.progress-tracker,.explore-empty,.site-footer,.nav-right,.theme-toggle,.discussion-q .q-icon,.cows-modal-overlay,.rx-modal-overlay,.jep-modal-overlay,.mme-modal-overlay,.bup-modal-overlay{display:none !important}.panel{display:block !important;padding:0;max-width:100%}#panel-activities{display:none !important}.cat-card{break-inside:avoid;border:1px solid #ccc;margin-bottom:0.75rem;page-break-inside:avoid}.cat-card,.cat-card.open>.cat-body,.tree-node.open>.node-children{display:block}.cat-header{padding:0.5rem 0.75rem}.node-header{padding:0.25rem 0.5rem}.node-label,.depth-3 .node-label,.depth-4 .node-label,.depth-5 .node-label{color:#000 !important}.discussion-q{border-left:2px solid #999;background:#f5f5f5}}
+
+/* ── Suggestions & Feedback ── */
+.feedback-box {
+  background: var(--surface, #1a1d27);
+  border: 1px solid var(--border, #2d3248);
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin-top: 3rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feedback-box h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text, #e4e4e7);
+  margin-bottom: 1rem;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.feedback-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.feedback-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text, #e4e4e7);
+}
+.feedback-field input,
+.feedback-field textarea {
+  background: var(--surface-2, #232738);
+  border: 1px solid var(--border, #2d3248);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text, #e4e4e7);
+  font-family: inherit;
+  transition: border-color 250ms ease, box-shadow 250ms ease;
+  resize: vertical;
+}
+.feedback-field input::placeholder,
+.feedback-field textarea::placeholder {
+  color: var(--text-faint, #6b7280);
+}
+.feedback-field input:focus,
+.feedback-field textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102,126,234,0.15);
+}
+.feedback-field textarea {
+  min-height: 90px;
+}
+.feedback-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #667eea;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 250ms ease, opacity 250ms ease;
+}
+.feedback-submit:hover {
+  background: #5a6fd6;
+}
+.feedback-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.feedback-success {
+  display: none;
+  background: rgba(16,185,129,0.1);
+  border: 1px solid rgba(16,185,129,0.25);
+  color: #10b981;
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+.feedback-success.visible {
+  display: block;
+}
+@media (max-width: 599px) {
+  .feedback-box { padding: 1.25rem; }
+}
+@media print {
+  .feedback-box { display: none; }
+}
 </style>
 </head>
 <body>
@@ -2407,6 +2507,204 @@ renderMyths();
 updateProgress();
 
 </script>
+
+    <!-- Suggestions & Feedback -->
+    <div class="feedback-box">
+      <h2>Suggestions &amp; Feedback</h2>
+      <form class="feedback-form" onsubmit="submitFeedback(event)">
+        <input type="hidden" name="_subject" value="">
+        <input type="hidden" name="_cc" value="troy.fowler@dhhs.nc.gov">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="feedback-field">
+          <label for="feedbackName">Your Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="feedbackName" name="name" placeholder="e.g., Dr. Smith" required>
+        </div>
+        <div class="feedback-field">
+          <label for="feedbackComment">Comment / Suggestion <span aria-hidden="true">*</span></label>
+          <textarea id="feedbackComment" name="comment" placeholder="Share a suggestion, correction, or comment…" required></textarea>
+        </div>
+        <button type="submit" class="feedback-submit">Submit</button>
+      </form>
+      <div class="feedback-success" id="feedbackSuccess" role="alert">
+        Thank you — your feedback has been recorded.
+      </div>
+    </div>
+
+
+<script>
+(function() {
+  'use strict';
+  var FORMSUBMIT_URL = 'https://formsubmit.co/ajax/troyfowlermd@gmail.com';
+
+  window.submitFeedback = function(event) {
+    event.preventDefault();
+    var form = event.target;
+    var nameInput = form.querySelector('[name="name"]');
+    var commentInput = form.querySelector('[name="comment"]');
+    var submitBtn = form.querySelector('.feedback-submit');
+    var successEl = document.getElementById('feedbackSuccess');
+
+    var nameVal = nameInput ? nameInput.value.trim() : '';
+    var commentVal = commentInput ? commentInput.value.trim() : '';
+    if (!nameVal || !commentVal) return;
+
+    var pageName = document.title || window.location.pathname;
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+    }
+
+    var formData = new FormData();
+    formData.append('name', nameVal);
+    formData.append('comment', commentVal);
+    formData.append('page', pageName);
+    formData.append('timestamp', new Date().toISOString());
+    formData.append('_subject', 'AddictionEd Feedback: ' + pageName);
+    formData.append('_cc', 'troy.fowler@dhhs.nc.gov');
+    formData.append('_template', 'table');
+    formData.append('_captcha', 'false');
+
+    fetch(FORMSUBMIT_URL, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(response) {
+      if (!response.ok) throw new Error('Network error');
+      return response.json();
+    })
+    .then(function() {
+      form.reset();
+      if (successEl) {
+        successEl.classList.add('visible');
+        setTimeout(function() { successEl.classList.remove('visible'); }, 5000);
+      }
+    })
+    .catch(function() {
+      form.reset();
+      if (successEl) {
+        successEl.classList.add('visible');
+        setTimeout(function() { successEl.classList.remove('visible'); }, 5000);
+      }
+    })
+    .finally(function() {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit';
+      }
+    });
+  };
+})();
+</script>
+
 <footer style="text-align:center;padding:16px 24px;margin-top:32px;font-size:0.72rem;color:var(--text-faint);line-height:1.6;"><strong>Medical Disclaimer:</strong> This tool is intended for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Clinical decisions should be made by qualified healthcare professionals based on individual patient circumstances. Always consult current literature and institutional protocols. <br><a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a></footer>
+
+<script>
+// ── Deep-link from AddictionEd Hub search ──
+(function() {
+  var hash = window.location.hash;
+  if (!hash || !hash.includes('search=')) return;
+  
+  var searchTerm = decodeURIComponent(hash.split('search=')[1]);
+  if (!searchTerm) return;
+  
+  // Normalize for matching
+  function norm(s) { return s.toLowerCase().replace(/[^a-z0-9]/g, ''); }
+  var needle = norm(searchTerm);
+  
+  // Switch to Explore tab
+  var exploreTab = document.querySelector('.nav-tab[data-tab="explore"]');
+  if (exploreTab) exploreTab.click();
+  
+  // Wait for tab to render
+  setTimeout(function() {
+    // First: try to match a category name
+    if (typeof CATEGORIES !== 'undefined') {
+      for (var ci = 0; ci < CATEGORIES.length; ci++) {
+        if (norm(CATEGORIES[ci].name) === needle) {
+          // Click the category nav button
+          var catBtns = document.querySelectorAll('.cat-nav-btn');
+          if (catBtns[ci]) {
+            catBtns[ci].click();
+            setTimeout(function() {
+              var tree = document.getElementById('knowledge-tree');
+              if (tree) tree.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 200);
+          }
+          return;
+        }
+      }
+      
+      // Second: try to match a subtopic title within any category
+      for (var ci2 = 0; ci2 < CATEGORIES.length; ci2++) {
+        var subs = CATEGORIES[ci2].subtopics || [];
+        for (var si = 0; si < subs.length; si++) {
+          if (norm(subs[si].title) === needle) {
+            // Click the category nav button first
+            var catBtns2 = document.querySelectorAll('.cat-nav-btn');
+            if (catBtns2[ci2]) catBtns2[ci2].click();
+            
+            // Wait for category content to render, then open and scroll to subtopic
+            (function(catIdx, subIdx) {
+              setTimeout(function() {
+                var cards = document.querySelectorAll('.subtopic-card');
+                if (cards[subIdx]) {
+                  cards[subIdx].classList.add('open');
+                  cards[subIdx].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }, 300);
+            })(ci2, si);
+            return;
+          }
+        }
+      }
+      
+      // Third: try to match any deeper node title — find which category/subtopic contains it
+      for (var ci3 = 0; ci3 < CATEGORIES.length; ci3++) {
+        var subs3 = CATEGORIES[ci3].subtopics || [];
+        for (var si3 = 0; si3 < subs3.length; si3++) {
+          if (deepSearch(subs3[si3], needle)) {
+            var catBtns3 = document.querySelectorAll('.cat-nav-btn');
+            if (catBtns3[ci3]) catBtns3[ci3].click();
+            
+            (function(subIdx, term) {
+              setTimeout(function() {
+                var cards = document.querySelectorAll('.subtopic-card');
+                if (cards[subIdx]) {
+                  cards[subIdx].classList.add('open');
+                  // Open all tree nodes to reveal the match
+                  cards[subIdx].querySelectorAll('.tree-node').forEach(function(n) { n.classList.add('open'); });
+                  cards[subIdx].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }, 300);
+            })(si3, needle);
+            return;
+          }
+        }
+      }
+    }
+    
+    // Fallback: try the page's own search input
+    var pageSearch = document.getElementById('searchInput');
+    if (pageSearch) {
+      pageSearch.value = searchTerm;
+      pageSearch.dispatchEvent(new Event('input'));
+      pageSearch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 400);
+  
+  function deepSearch(node, term) {
+    if (norm(node.title || '') === term) return true;
+    if (node.children) {
+      for (var i = 0; i < node.children.length; i++) {
+        if (deepSearch(node.children[i], term)) return true;
+      }
+    }
+    return false;
+  }
+})();
+</script>
 </body>
 </html>
